@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace MinMax
 {
@@ -8,16 +9,19 @@ namespace MinMax
         {
             // написать программу, которая найде min и max в массиве
             // int i = 0;
-            // int[] a = new[] { -1, 2, -3, 10, 7, 3, -5, 8, -10, -3, 2, -7 };
-            int[] a = null;
+            int[] a = new[] { -1, 2, -3, 10, 7, 3, -5, 8, -10, -3, 2, -7 };
+            // int[] a = null;
 
             if (a != null && a.Length > 0)
             {
+                // var min1 = a.Min();
+                // var max2 = a.Max();
+
                 // todo
                 int min = a[0];
                 int max = a[0];
 
-                for (var i = 0; i < a.Length; i++)
+                for (int i = 0; i < a.Length; i++)
                 {
                     if (min > a[i])
                         min = a[i];
