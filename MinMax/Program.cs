@@ -30,6 +30,15 @@ namespace MinMax
                         max = a[i];
                 }
 
+                //foreach(var item in a)
+                //{
+                //    if (min > item)
+                //        min = item;
+
+                //    if (max < item)
+                //        max = item;
+                //}
+
                 Console.WriteLine($"min={min}\nmax={max}");
                 // найти и вывести в консоль
             }
