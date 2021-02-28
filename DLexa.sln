@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMax", "MinMax\MinMax.csproj", "{D8EDC917-D735-415D-B80D-D6A59B65A4A9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuadraticEquation", "QuadraticEquation\QuadraticEquation.csproj", "{4042F829-09D9-44CA-9BE1-B1DEEE4DC9A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linear equation solution", "linear equation solution2\linear equation solution.csproj", "{BF9D1167-1587-490D-93EA-B05AF4A88471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D8EDC917-D735-415D-B80D-D6A59B65A4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8EDC917-D735-415D-B80D-D6A59B65A4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8EDC917-D735-415D-B80D-D6A59B65A4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4042F829-09D9-44CA-9BE1-B1DEEE4DC9A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4042F829-09D9-44CA-9BE1-B1DEEE4DC9A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4042F829-09D9-44CA-9BE1-B1DEEE4DC9A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4042F829-09D9-44CA-9BE1-B1DEEE4DC9A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9D1167-1587-490D-93EA-B05AF4A88471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9D1167-1587-490D-93EA-B05AF4A88471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9D1167-1587-490D-93EA-B05AF4A88471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9D1167-1587-490D-93EA-B05AF4A88471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
