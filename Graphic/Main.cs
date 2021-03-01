@@ -9,30 +9,15 @@ namespace Graphic
     {
         private GraphicData Data;
 
+        public Main()
+        {
+            InitializeComponent();
+        }
+
         public Main(GraphicData data) : this()
         {
             Data = data;
             WriteDataToControls();
-
-            pnlGraphic.Paint += PnlGraphic_Paint;
-        }
-
-        private void PnlGraphic_Paint(object sender, PaintEventArgs e)
-        {
-            Graphics g = e.Graphics;
-
-            Pen linePen = new Pen(Color.Black);
-            g.DrawLine(linePen, new Point(0, pnlGraphic.Height / 2), new Point(pnlGraphic.Width, pnlGraphic.Height / 2));
-            g.DrawLine(linePen, new Point(pnlGraphic.Width/2, 0), new Point(pnlGraphic.Width/2, pnlGraphic.Height));
-
-            Pen pen = new Pen(Color.Red);
-
-            var points = GetPoints();
-
-            for(int i=1; i<points.Count; i++)
-            {
-                g.DrawLine(pen, points[i-1], points[i]);
-            }            
         }
 
         private void WriteDataToControls()
@@ -65,9 +50,22 @@ namespace Graphic
             return points;
         }
 
-        public Main()
+        private void PnlGraphic_Paint(object sender, PaintEventArgs e)
         {
-            InitializeComponent();
+            Graphics g = e.Graphics;
+
+            Pen linePen = new Pen(Color.Black);
+            g.DrawLine(linePen, new Point(0, pnlGraphic.Height / 2), new Point(pnlGraphic.Width, pnlGraphic.Height / 2));
+            g.DrawLine(linePen, new Point(pnlGraphic.Width / 2, 0), new Point(pnlGraphic.Width / 2, pnlGraphic.Height));
+
+            Pen pen = new Pen(Color.Red);
+
+            var points = GetPoints();
+
+            for (int i = 1; i < points.Count; i++)
+            {
+                g.DrawLine(pen, points[i - 1], points[i]);
+            }
         }
 
         private void btnDraw_Click(object sender, System.EventArgs e)

@@ -121,6 +121,7 @@ namespace Graphic
             this.pnlGraphic.Name = "pnlGraphic";
             this.pnlGraphic.Size = new System.Drawing.Size(654, 491);
             this.pnlGraphic.TabIndex = 1;
+            this.pnlGraphic.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlGraphic_Paint);
             // 
             // Main
             // 
