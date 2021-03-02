@@ -25,7 +25,7 @@ namespace Graphic
                 X2 = 5,
                 PointCount = 200,
 
-                Fn = Func2
+                Fn = Fn,
             };
 
             var mainForm = new Main(data);
@@ -41,6 +41,34 @@ namespace Graphic
         public static double Func2(double x)
         {
             return Math.Sin(x);
+        }
+
+        public static double Func3(double x)
+        {
+            // x1<x2
+            // 3x1<3x2
+            // -3x1>-3x2 !!!
+            // x1^3<x2^3
+
+            // x1<x2
+            // x1^4<x2^4 , x>=0
+
+            return 0 * (x * x * x * x) + 1 * (x * x * x) + 0 * (x * x) - 3 * (x) + 0 * (1);
+        }
+
+        public static double Fn(double x)
+        {
+            int[] polinom = new int[] { 0, -3, 0, -1, 0 };
+
+            double sum = 0;
+            double xN = 1;
+            foreach (var value in polinom)
+            {
+                sum += value * xN;
+                xN = xN * x;
+            }
+
+            return sum;
         }
     }
 }
