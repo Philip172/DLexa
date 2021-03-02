@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linear equation solution", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphic", "Graphic\Graphic.csproj", "{C66E1D34-43E0-4B61-95C1-FF5391E98E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci numbers", "Fibonacci numbers\Fibonacci numbers.csproj", "{D716E987-26C3-41B4-B39A-02C8D69E42C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci numbers", "Fibonacci numbers\Fibonacci numbers.csproj", "{D716E987-26C3-41B4-B39A-02C8D69E42C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sorting an array", "sorting an array\sorting an array.csproj", "{16CEB16D-5D9E-437B-8243-1E0C700967C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sorting an array", "sorting an array\sorting an array.csproj", "{16CEB16D-5D9E-437B-8243-1E0C700967C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckMonoton", "ConsoleApp1\CheckMonoton.csproj", "{489073C2-9B27-4832-95BD-2FCFF7F574F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{16CEB16D-5D9E-437B-8243-1E0C700967C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16CEB16D-5D9E-437B-8243-1E0C700967C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16CEB16D-5D9E-437B-8243-1E0C700967C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489073C2-9B27-4832-95BD-2FCFF7F574F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489073C2-9B27-4832-95BD-2FCFF7F574F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489073C2-9B27-4832-95BD-2FCFF7F574F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489073C2-9B27-4832-95BD-2FCFF7F574F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
